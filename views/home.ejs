@@ -8,11 +8,13 @@
 	<h1>Home View</h1>
 	<!-- need to define isAuthenticated -->
 	<% if (!isAuthenticated) { %>
+		<p>Not signed in</p>
 		<a href="/login">Log in Here</a>
 	<%} else {%>
 		<%= user.username %>, is logged in
 		<a href= "/logout"> Log out </a>
 	<% } %>
+	<a href="/signup"> Sign Up </a>
 	
 </body>
 </html>
